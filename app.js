@@ -3,9 +3,6 @@ const got = require('got');
 const validUrl = 'https://gorest.co.in/public-api/users?_format=json&access-token=2yXEckr1AWV1LTyZKgNwzQj9_xym5N33161Y';
 const inValidUrl = 'https://gorest.co.in/public-api/userss?_format=json&access-token=2yXEckr1AWV1LTyZKgNwzQj9_xym5N33161Y';
 
-getData(validUrl);
-getData(inValidUrl);
-
 getData(validUrl).then((res) => {
 	console.log(res);
 })
